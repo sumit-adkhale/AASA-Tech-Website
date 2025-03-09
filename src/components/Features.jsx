@@ -43,10 +43,10 @@ function Features() {
   ];
   return (
     <section className="mt-15">
-      <h1 className=" text-center font-semibold text-3xl">
+      <h1 className=" text-center font-semibold xs:text-3xl text-2xl">
         Not Satisfied Yet?
       </h1>
-      <h2 className=" text-center mt-1 mb-8 font-medium text-lg">
+      <h2 className=" text-center mt-1 mb-8 font-medium xs:text-lg text-base">
         Wge got you! Here are few extra features
       </h2>
       <ul className="mt-6 space-y-4 max-w-3xl md:mx-auto">
@@ -57,7 +57,7 @@ function Features() {
       <div className="flex justify-center">
         <Button
           data={"Book Now for ₹79"}
-          customcss={"text-2xl my-8 rounded-xl py-2 via-blue-500"}
+          customcss={"xs:text-2xl text-xl  my-8 rounded-xl py-2 via-blue-500"}
         />
       </div>
     </section>

@@ -65,15 +65,15 @@ function FAQ() {
 
   return (
     <section className="py-12 w-full">
-      <h2 className="text-4xl font-semibold text-center">FAQs</h2>
+      <h2 className="xs:text-4xl text-3xl font-semibold text-center">FAQs</h2>
       <div className="mt-6 max-w-3xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow">
+          <div key={index} className="bg-white xs:p-4 p-2 rounded-lg shadow">
             <button
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between items-center font-semibold cursor-pointer"
             >
-              <span className="text-xl text-left">Q: {faq.question}</span>
+              <span className="xs:text-xl text-base text-left">Q: {faq.question}</span>
               <img
                 className={`w-[30px] transition-transform duration-300 ${
                   openFAQ === index ? "rotate-180" : ""
@@ -85,25 +85,25 @@ function FAQ() {
             {openFAQ === index && (
               <ul className="mt-2 list-disc pl-6">
                 {index === 1 ? (
-                  <li className="text-md">
+                  <li className="xs:text-md text-sm ">
                     <span>You ll need:</span>
                     <div className="flex gap-2">
-                      <img className="w-[18px]" src="checked.png" alt="" />
-                      <span>A tablet (iPad, Wacom, or any drawing tablet)</span>
+                      <span>✔️</span>
+                      <span> A tablet (iPad, Wacom, or any drawing tablet)</span>
                     </div>
                     <div className="flex gap-2">
-                      <img className="w-[18px]" src="checked.png" alt="" />
+                      <span>✔️</span>
                       <span>
                         Digital art software (Procreate, Photoshop, or Krita)
                       </span>
                     </div>
                     <div className="flex gap-2">
-                      <img className="w-[18px]" src="checked.png" alt="" />
+                      <span>✔️</span>
                       <span>A passion for creativity</span>
                     </div>
                   </li>
                 ) : (
-                  <li className="text-md">{faq.answer}</li>
+                  <li className="xs:text-md text-sm">{faq.answer}</li>
                 )}
               </ul>
             )}

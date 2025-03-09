@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 const DigitalArtCourse = () => {
   return (
-    <div className="p-10 font-sans">
+    <div className="p-3 xs:p-10 font-sans">
       <Header />
       <HeroSection />
       <TrainingSection />

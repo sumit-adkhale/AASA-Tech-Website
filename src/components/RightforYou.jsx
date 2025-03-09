@@ -6,9 +6,9 @@ function RightforYou() {
     <section className="mt-16 leading-5 sm:leading-3">
       <ColoredText
         text={"Is This Right for You?"}
-        fontSize={"text-2xl md:text-4xl"}
+        fontSize={"xs:text-2xl text-xl md:text-4xl"}
       />
-      <h2 className="font-medium text-center md:text-2xl md:mt-2">
+      <h2 className="font-medium text-sm text-center md:text-2xl md:mt-2">
         Everybody is fond of Digital Art! You need it too.
       </h2>
       <img
