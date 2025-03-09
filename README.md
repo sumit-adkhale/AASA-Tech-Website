@@ -102,21 +102,6 @@ The website will be available at **`http://localhost:3000`**.
 
 ---
 
-## Fixing Horizontal Scroll Issue
-To avoid horizontal scrolling issues:
-✅ Use `w-full` instead of `w-screen`
-✅ Add `overflow-x-hidden` to `body`
-✅ Use `flex-wrap` in `flex` containers
-✅ Limit background image sizes with `bg-cover`
-
-```css
-body {
-  overflow-x: hidden;
-}
-```
-
----
-
 ## Future Improvements
 - ✅ Add **Dark Mode** support
 - ✅ Implement **User Authentication** for course access
